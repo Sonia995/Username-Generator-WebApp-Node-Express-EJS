@@ -1,0 +1,108 @@
+<%- include("partials/header.ejs") %>
+
+<header>
+  <h1>
+    Generador de nombres TIK-TOK
+    <img src="images/tik-tok.png" class="tiktokIcon" alt="Tik-tok icon" />
+  </h1>
+</header>
+<main>
+  <section class="formulario">
+    <form action="/submit" method="POST">
+      <fieldset class="nombre">
+        <legend>Personaliza tu nombre</legend>
+        <label for="userName"
+          >Escribe algo que te represente, nombre, mascota o a que te
+          dedicas.<br />
+          ¡No hay límites, se original!</label
+        >
+        <p>O simplemente dejalo vacío y nosotros hacemos la magia 🧙‍♂️ </p>
+        <input
+          id="userName"
+          type="text"
+          name="userName"
+          placeholder="Escribe lo que quieras"
+        />
+      </fieldset>
+
+      <fieldset>
+        <legend>Elige un género</legend>
+        <p>Obligatorio si elegiste un nombre personalizado</p>
+        <input
+          id="random"
+          class="radioButton"
+          type="radio"
+          value="random"
+          name="gender"
+          checked
+        />
+        <label for="random" class="labelButton">Random</label>
+        <br />
+        <input
+          id="femenino"
+          class="radioButton"
+          type="radio"
+          value="femenino"
+          name="gender"
+        />
+        <label for="femenino" class="labelButton">Femenino</label>
+        <br />
+        <input
+          id="masculino"
+          class="radioButton"
+          type="radio"
+          value="masculino"
+          name="gender"
+        />
+        <label for="masculino" class="labelButton">Masculino</label>
+      </fieldset>
+
+      <input class="buttonGenerator" type="submit" value="Generar Nombres" />
+    </form>
+  </section>
+  <section>
+    <p>
+      En el vertiginoso mundo de TikTok, el nombre de usuario que elijas es tu
+      carta de presentación. Es tu identidad en esta plataforma de expresión
+      creativa y entretenimiento. Pero, ¿cómo encontrar el nombre perfecto que
+      capture tu personalidad y se destaque entre la multitud? ¡No busques más! </p>
+      <p>
+      Nuestro generador de nombres aleatorios para TikTok está aquí para
+      ayudarte a brillar en las redes sociales. Libera tu Creatividad En TikTok,
+      la creatividad es el alma de la plataforma. Ya sea que quieras ser el
+      próximo rey de los bailes virales, un maestro de las transformaciones de
+      belleza, o un contador de historias ingenioso, tu nombre de usuario puede
+      impulsar tu presencia en la plataforma. Con nuestro generador, puedes
+      explorar una amplia gama de nombres que reflejen tus intereses y pasiones.</p>
+      <p>
+      Nombres Únicos y Listos para la Fama Cada nombre de usuario que generamos
+      es único y listo para destacar en TikTok. Hemos incorporado palabras clave
+      long tail para garantizar que tu nombre sea relevante en búsquedas y
+      descubrimientos. <p> No importa si eres un amante de la música, un apasionado
+      de la cocina, un fanático de los viajes o un amante de la comedia, tenemos
+      el nombre de usuario perfecto para ti. Rápido y Sencillo Nuestro generador
+      de nombres aleatorios es rápido y sencillo de usar. Simplemente ingresa
+      algunas palabras clave que describan tus intereses y valores, y nuestro
+      generador hará el resto. Obtendrás una lista de nombres que te representen
+      y que estén listos para usar en TikTok.</p> <p>Marca tu Presencia en TikTok Tu
+      nombre de usuario es la base de tu marca personal en TikTok. Es la
+      etiqueta que llevarás contigo en cada video, comentario y seguidor. Así
+      que, ¿por qué conformarte con un nombre genérico? Con nuestro generador,
+      puedes marcar tu presencia en TikTok de una manera única y memorable.</p> 
+      <p>
+      Comienza tu Viaje en TikTok con el Pie Derecho Ya sea que estés comenzando
+      en TikTok o buscando un cambio de nombre para revitalizar tu presencia en
+      la plataforma, nuestro generador de nombres aleatorios te ayudará a dar el
+      primer paso. Descubre la magia de un nombre de usuario que resuene con tu
+      audiencia y te ayude a destacar en el emocionante mundo de TikTok. No
+      esperes más. 
+      <p>¡Deja que nuestro generador de nombres aleatorios para TikTok
+      te ayude a encontrar el nombre de usuario perfecto que te acompañará en tu
+      viaje de creatividad y entretenimiento en esta plataforma! ¡Brilla en
+      TikTok con un nombre que te represente!
+    </p>
+    <img src="images/tik-tok.png" class="tiktokIcon" alt="Tik-tok icon" />
+  </section>
+</main>
+
+<%- include("partials/footer.ejs") %>

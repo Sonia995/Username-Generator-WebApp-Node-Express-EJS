@@ -1,22 +1,22 @@
-@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@800&family=Sarabun:wght@400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;400&family=Red+Hat+Display:wght@800&family=Spinnaker&display=swap');
 
 body {
-  background-color: #040d12;
-  background-image: url("https://www.transparenttextures.com/patterns/stardust.png");
+  background-color: #000000;
+  background-image: url("https://www.transparenttextures.com/patterns/hixs-evolution.png");
   /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
   color: hotpink;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Sarabun", sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 1.2rem;
   text-align: center;
   line-height: 1.5;
 }
 
 section {
-  margin: 80px;
-  color: #fff;
+ color: #fff;
+ margin-bottom: 80px;
 }
 
 main {
@@ -29,21 +29,57 @@ footer p span {
  }
 
 h1 {
-  font-size: 3.8rem;
-  font-family: "Red Hat Display", sans-serif;
+  font-size: 3rem;
+  font-family: 'Spinnaker', sans-serif;
   font-weight: 800;
   letter-spacing: 6px;
   text-transform: uppercase;
   color: #fff;
-  animation: slide 2s ease 0s 1 normal forwards;
+ margin-bottom: 50px;
+ animation: pop 2s ease 0s 1 normal none;
 }
+
+@keyframes pop {
+	0% {
+		transform: scale3d(1, 1, 1);
+	}
+
+	30% {
+		transform: scale3d(1.25, 0.75, 1);
+	}
+
+	40% {
+		transform: scale3d(0.75, 1.25, 1);
+	}
+
+	50% {
+		transform: scale3d(1.15, 0.85, 1);
+	}
+
+	65% {
+		transform: scale3d(0.95, 1.05, 1);
+	}
+
+	75% {
+		transform: scale3d(1.05, 0.95, 1);
+	}
+
+	100% {
+		transform: scale3d(1, 1, 1);
+	}
+}
+
+h1 span {
+  color: hotpink;
+  font-size: 6rem;
+ }
 
 .tiktokIcon {
   width: 60px;
   height: 60px;
 }
 
-.formulario {
+/* .formulario {
   box-sizing: border-box;
   border: 5px solid #974ec3;
   border-radius: 30px;
@@ -56,6 +92,63 @@ h1 {
   -webkit-box-shadow: 0px 0px 50px -3px #B931FC;
   -moz-box-shadow: 0px 0px 50px -3px #B931FC;
   animation: pop 2s ease 0s 1 normal forwards;
+} */
+
+ #box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-family: 'Raleway';
+  padding: 30px;
+  box-shadow: 0px 0px 50px -3px #B931FC;
+  margin-bottom: 80px;
+} 
+.gradient-border {
+  --borderWidth: 10px;
+  background: black;
+  position: relative;
+  border-radius: var(--borderWidth);
+}
+.gradient-border:after {
+  content: '';
+  position: absolute;
+  top: calc(-1 * var(--borderWidth));
+  left: calc(-1 * var(--borderWidth));
+  height: calc(100% + var(--borderWidth) * 2);
+  width: calc(100% + var(--borderWidth) * 2);
+  background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+  border-radius: calc(2 * var(--borderWidth));
+  z-index: -1;
+  -webkit-animation: animatedgradient 3s ease alternate infinite;
+          animation: animatedgradient 3s ease alternate infinite;
+  background-size: 300% 300%;
+}
+
+
+@-webkit-keyframes animatedgradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+@keyframes animatedgradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
 .formulario label {
@@ -75,7 +168,6 @@ h1 {
   padding: 12px 30px;
   position: relative;
   z-index: 2;
-  transition: all 0.5s ease 0s;
   overflow: hidden;
   text-align: center;
 }
@@ -111,17 +203,15 @@ input[type="radio"]:checked + label:after {
   border: 7px solid hotpink;
   float: right;
   margin-top: 0.8em;
-  margin-right: -1em;
+  margin-right: -0.9em;
   border-radius: 100%;
 }
 
 fieldset {
-  padding: 5%;
   border-radius: 10px;
-  border: 3px solid white;
+  border: 2px solid white;
   margin-bottom: 20px;
   color: hotpink;
-  
 }
 
 section fieldset p {
@@ -133,9 +223,11 @@ legend {
   padding: 0.3em 0.6em;
   border: 2px solid white;
   border-radius: 5px;
-  font-size: 1.5em;
-  font-family: "Sarabun", sans-serif;
+  font-size: 1.2em;
   letter-spacing: 5px;
+  font-weight: 600;
+  font-family: 'Red Hat Display', sans-serif;
+  color: white;
 }
 
 .nombre input {
@@ -210,6 +302,8 @@ section p {
   text-align: left;
 }
 
+
+
 @media (max-width: 660px) {
   ul {
     column-count: 1;
@@ -218,62 +312,15 @@ section p {
     font-size: 14px;
   }
   h1 {
+    font-size: 2rem;
+    
+  }
+  h1 span {
     font-size: 2.5rem;
   }
-}
-
-@keyframes pop {
-  0% {
-    opacity: 0;
-    transform: translateX(-250px) rotate(-200deg);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translateX(0) rotate(0deg);
+  .tiktokIcon {
+    width: 30px;
+    height: 30px;
   }
 }
 
-@keyframes slide {
-  0% {
-    animation-timing-function: ease-in;
-    opacity: 0;
-    transform: translateY(-250px);
-  }
-
-  38% {
-    animation-timing-function: ease-out;
-    opacity: 1;
-    transform: translateY(0);
-  }
-
-  55% {
-    animation-timing-function: ease-in;
-    transform: translateY(-65px);
-  }
-
-  72% {
-    animation-timing-function: ease-out;
-    transform: translateY(0);
-  }
-
-  81% {
-    animation-timing-function: ease-in;
-    transform: translateY(-28px);
-  }
-
-  90% {
-    animation-timing-function: ease-out;
-    transform: translateY(0);
-  }
-
-  95% {
-    animation-timing-function: ease-in;
-    transform: translateY(-8px);
-  }
-
-  100% {
-    animation-timing-function: ease-out;
-    transform: translateY(0);
-  }
-}

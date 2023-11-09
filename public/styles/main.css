@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;400&family=Red+Hat+Display:wght@800&family=Spinnaker&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200;400&family=Red+Hat+Display:wght@800&family=Spinnaker&display=swap");
 
 body {
-  background-color: #000000;
-  background-image: url("https://www.transparenttextures.com/patterns/hixs-evolution.png");
-  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+  background-color: #000;
+  background-image: url("../images/texture.png");
+  background-repeat: repeat;
   color: hotpink;
   margin: 0;
   padding: 0;
@@ -15,64 +15,64 @@ body {
 }
 
 section {
- color: #fff;
- margin-bottom: 80px;
+  color: #fff;
+  margin-bottom: 80px;
 }
 
 main {
-width: 75%;
-margin: auto;
+  width: 75%;
+  margin: auto;
 }
 
 footer p span {
   color: grey;
- }
+}
 
 h1 {
   font-size: 3rem;
-  font-family: 'Spinnaker', sans-serif;
+  font-family: "Spinnaker", sans-serif;
   font-weight: 800;
   letter-spacing: 6px;
   text-transform: uppercase;
   color: #fff;
- margin-bottom: 50px;
- animation: pop 2s ease 0s 1 normal none;
+  margin-bottom: 50px;
+  animation: pop 2s ease 0s 1 normal none;
 }
 
 @keyframes pop {
-	0% {
-		transform: scale3d(1, 1, 1);
-	}
+  0% {
+    transform: scale3d(1, 1, 1);
+  }
 
-	30% {
-		transform: scale3d(1.25, 0.75, 1);
-	}
+  30% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
 
-	40% {
-		transform: scale3d(0.75, 1.25, 1);
-	}
+  40% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
 
-	50% {
-		transform: scale3d(1.15, 0.85, 1);
-	}
+  50% {
+    transform: scale3d(1.15, 0.85, 1);
+  }
 
-	65% {
-		transform: scale3d(0.95, 1.05, 1);
-	}
+  65% {
+    transform: scale3d(0.95, 1.05, 1);
+  }
 
-	75% {
-		transform: scale3d(1.05, 0.95, 1);
-	}
+  75% {
+    transform: scale3d(1.05, 0.95, 1);
+  }
 
-	100% {
-		transform: scale3d(1, 1, 1);
-	}
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
 }
 
 h1 span {
   color: hotpink;
   font-size: 6rem;
- }
+}
 
 .tiktokIcon {
   width: 60px;
@@ -94,16 +94,16 @@ h1 span {
   animation: pop 2s ease 0s 1 normal forwards;
 } */
 
- #box {
+#box {
   display: flex;
   align-items: center;
   justify-content: center;
   color: white;
-  font-family: 'Raleway';
+  font-family: "Raleway";
   padding: 30px;
-  box-shadow: 0px 0px 50px -3px #B931FC;
+  box-shadow: 0px 0px 50px -3px #b931fc;
   margin-bottom: 80px;
-} 
+}
 .gradient-border {
   --borderWidth: 10px;
   background: black;
@@ -111,44 +111,52 @@ h1 span {
   border-radius: var(--borderWidth);
 }
 .gradient-border:after {
-  content: '';
+  content: "";
   position: absolute;
   top: calc(-1 * var(--borderWidth));
   left: calc(-1 * var(--borderWidth));
   height: calc(100% + var(--borderWidth) * 2);
   width: calc(100% + var(--borderWidth) * 2);
-  background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+  background: linear-gradient(
+    60deg,
+    #f79533,
+    #f37055,
+    #ef4e7b,
+    #a166ab,
+    #5073b8,
+    #1098ad,
+    #07b39b,
+    #6fba82
+  );
   border-radius: calc(2 * var(--borderWidth));
   z-index: -1;
   -webkit-animation: animatedgradient 3s ease alternate infinite;
-          animation: animatedgradient 3s ease alternate infinite;
+  animation: animatedgradient 3s ease alternate infinite;
   background-size: 300% 300%;
 }
 
-
 @-webkit-keyframes animatedgradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
-
 @keyframes animatedgradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 .formulario label {
@@ -226,7 +234,7 @@ legend {
   font-size: 1.2em;
   letter-spacing: 5px;
   font-weight: 600;
-  font-family: 'Red Hat Display', sans-serif;
+  font-family: "Red Hat Display", sans-serif;
   color: white;
 }
 
@@ -266,6 +274,7 @@ legend {
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
+  margin-top: 10px;
 }
 
 .buttonGenerator:hover,
@@ -282,29 +291,32 @@ legend {
   background: transparent;
   backdrop-filter: blur(2px);
   color: #fff;
-  box-shadow: 10px -9px 12px 0px rgba(60, 55, 55, 1);
-  -webkit-box-shadow: 10px -9px 12px 0px rgba(60, 55, 55, 1);
-  -moz-box-shadow: 10px -9px 12px 0px rgba(60, 55, 55, 1);
-  padding: 10px;
+  box-shadow: 0px 0px 50px -3px #b931fc;
+  padding: 10px, 50px, 10px, 20px;
 }
 
 ul {
-  column-count: 4;
+  column-count: 3;
 }
 
 li {
   list-style: none;
   text-align: justify;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 
 section p {
   text-align: left;
+  text-indent: 1em;
 }
 
+@media (max-width: 860px) {
+  ul {
+    column-count: 2;
+  }
+}
 
-
-@media (max-width: 660px) {
+@media (max-width: 550px) {
   ul {
     column-count: 1;
   }
@@ -313,7 +325,7 @@ section p {
   }
   h1 {
     font-size: 2rem;
-    
+    line-height: 1.2;
   }
   h1 span {
     font-size: 2.5rem;
@@ -324,9 +336,7 @@ section p {
   }
 
   input[type="radio"]:checked + label:after {
-  margin-top: 0.85em;
-  margin-right: -1.22em;
+    margin-top: 0.85em;
+    margin-right: -1.22em;
   }
-
 }
-

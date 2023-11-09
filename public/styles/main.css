@@ -322,5 +322,11 @@ section p {
     width: 30px;
     height: 30px;
   }
+
+  input[type="radio"]:checked + label:after {
+  margin-top: 0.85em;
+  margin-right: -1.22em;
+  }
+
 }
 
